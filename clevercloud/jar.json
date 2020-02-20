@@ -4,6 +4,6 @@
     "goal": "package -DfinalName=app"
   },
   "deploy": {
-    "jarName": "target/app.jar"
+    "jarName": "target/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"
   }
 }
