@@ -6,7 +6,6 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>2.2.0.BUILD-SNAPSHOT</version>
-
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -30,8 +29,8 @@
     <jacoco.version>0.8.5</jacoco.version>
     <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>
     <spring-format.version>0.0.19</spring-format.version>
-  </properties>
-
+    <finalName>${project.artifactId}-${project.version}</finalName>
+</properties>
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
@@ -130,7 +129,8 @@
   </dependencies>
 
   <build>
-    <plugins>
+    <finalName>${finalName}</finalName>
+ <plugins>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
