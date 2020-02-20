@@ -1,9 +1,9 @@
 {
   "build": {
     "type": "maven",
-    "goal": "package -DfinalName=app"
+    "goal": "package -DfinalName=app -DskipTests"
   },
   "deploy": {
-    "jarName": "target/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"
+    "jarName": "target/app.jar"
   }
 }
